@@ -1,0 +1,33 @@
+<html>
+<head>
+<title> Zadanie 86</title>
+<script>
+function przycisk1_adamczak()
+{
+pokaz1.innerHTML="Ostatnio zmodyfikowany : "+document.lastModified;
+}
+function przycisk2_adamczak()
+{
+pokaz2.innerHTML="Aktualna data : "+Date();
+}
+function przycisk3_adamczak()
+{
+dzis_ada = new Date();
+document.write("Aktualny czas : ",dzis_ada.getHours(),":",dzis_ada.getMinutes());
+}
+</script>
+</head>
+<body>
+<form>
+<a onclick="przycisk1_adamczak(' ')"><img src="p1_1.png" alt="Przycisk1" border="0" onmouseover="this.src = 'p1_2.png'" onmouseout="this.src ='p1_1.png'" /></a>
+<a onclick="przycisk2_adamczak(' ')"><img src="p2_1.png" alt="Przycisk2" border="0" onmouseover="this.src = 'p2_2.png'" onmouseout="this.src ='p2_1.png'" /></a>
+<a onclick="przycisk3_adamczak(' ')"><img src="p3_1.png" alt="Przycisk3" border="0" onmouseover="this.src = 'p3_2.png'" onmouseout="this.src ='p3_1.png'" /></a>
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+<tr id="pokaz3"></tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+<head>
+<title> Zadanie 82</title>
+<script language="JavaScript">
+function pushbutton() {
+alert("Czesc !");}
+</script>
+</head>
+<body>
+<p><font color="yellow" size="25"></font></p>
+<font color="red" size="20">
+dzis = new Date() - Stworzenie Nowej Wartosci z Datą <br>
+dzis = dzis.getHours() - Zwraca Godzine 0-23 <br>
+dzis = dzis.getMinutes() - Zwraca Minuty 0-59 <br>
+dzis = dzis.getMonth()+1 - Zwraca Miesiac 0-11 (Dodajemy 1 By Pokazywał Prawdziwy Miesiac) <br>
+dzis = dzis.getDate() - Zwraca Dzien Miesiaca 1-31 <br>
+dzis = dzis.getFullYear() - Zwraca Rok <br>
+
+</font>
+Ostatnio zmodyfikowany
+<script language="LiveScript">
+document.write(document.lastModified,"<br>")
+</script>
+<form>
+<input type="button" name="Button1" value="Naciśnij mnie" onclick="pushbutton()">
+</form>
+<script language="JavaScript">
+dzis = new Date()
+document.write("<br>Aktualny czas : ",dzis.getHours(),":",dzis.getMinutes())
+"<font size=30px, color=blue>"
+document.write("<br>Aktualna data : "+"<font color=yellow>",dzis.getDate(),","+"<font color=red>",dzis.getMonth()+1,","+"<font color=blue>",dzis.getFullYear());
+</script>
+</body>
+</html>

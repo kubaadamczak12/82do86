@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> Zadanie 84</title>
+<script>
+function adamczak_start()
+{
+start_ada = new Date();
+poczatek_ada=start_ada.getTime()
+}
+function adamczak_stop()
+{
+stop_ada = new Date();
+koniec_ada=stop_ada.getTime()
+roznica_ada=koniec_ada-poczatek_ada;
+pokaz1.innerHTML=roznica_ada/1000+" s";
+}
+</script>
+</head>
+<body>
+<script>
+dzis_ada = new Date();
+document.write("<br>Aktualny czas : ",dzis_ada.getHours(),":",dzis_ada.getMinutes());
+</script>
+<br>
+<input type="button" name="Button1" value="START stoper" onclick="adamczak_start()">
+<input type="button" name="Button2" value="STOP stoper" onclick="adamczak_stop()">
+<br>
+<table border=5>
+<tr id="pokaz1"></tr>
+</table>
+</body>
+</html>
